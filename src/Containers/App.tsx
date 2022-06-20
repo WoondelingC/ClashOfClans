@@ -6,6 +6,7 @@ import consulta from '../helpers/peticion'
 const App = () => {
   
   const [clanes, setClanes] = useState([])
+  //const [busqueda, setBusqueda] = useState("")
   
   const informacion = async () => {
     const respuesta = await consulta()
@@ -17,6 +18,11 @@ const App = () => {
   useEffect(() => {
     informacion()
   },[])
+
+  /*const search = (e:any) => {
+    setBusqueda(e.target.value);
+  }*/
+
 
   return (
     <div className='w-75 m-auto'>

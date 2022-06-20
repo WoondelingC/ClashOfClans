@@ -2,6 +2,7 @@ import React from 'react'
 import portada from '../assets/portada.jpg'
 
 const Header = () => {
+
   return (
     <>
         <div>
@@ -10,7 +11,13 @@ const Header = () => {
         </div>
         <div className="input-group-lg mt-4">
             <h3 className="text-center" id="inputGroup-sizing-lg">Encuentra tu Clan</h3>
-            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" />
+            <input 
+                  type="text" 
+                  className="form-control" 
+                  aria-label="Sizing example input" 
+                  aria-describedby="inputGroup-sizing-lg"
+                  //onChange={search}
+                  />
         </div>
     </>
 
