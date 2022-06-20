@@ -21,7 +21,7 @@ const App = () => {
   return (
     <div className='w-75 m-auto'>
         <Header />
-      
+
       <div className='my-5 p-3 contenedor'> 
         {clanes.map(clan =>{
           const {name, badgeUrls} = clan
